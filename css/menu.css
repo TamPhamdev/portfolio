@@ -1,0 +1,38 @@
+@media screen and (max-width: 499px) {
+  .menu-nav { 
+    display: none !important;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  height: 20px;
+  cursor: pointer;
+  transition: all .5s ease-out;
+}
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  transition: all .3s ease-out;
+}
+.menu-btn.close {
+  transform: rotate(180deg);
+  /* transform-origin: center center; */
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg)  translate(5px,5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px,-6px);
+}
