@@ -173,7 +173,7 @@
   .left-banner {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
   }
  
   main#home > .scroll-down {

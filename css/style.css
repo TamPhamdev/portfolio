@@ -36,7 +36,7 @@ header {
   z-index: 1;
   position: fixed;
   width: 100%;
-  height: 30vh;
+  height: 10vh;
 }
 
 @media screen and (min-width: 500px) {
@@ -175,13 +175,13 @@ main {
   justify-content: center;
 }
 
-.scroll-down>button>img {
-  margin-right: 1rem; 
+.scroll-down>a>img {
+  margin-right: 1rem;
   width: 20px;
   animation: arrowMove 2s infinite;
 }
 
-.scroll-down>button {
+.scroll-down>a {
   color: #fff;
   background: none;
   cursor: pointer;
@@ -199,15 +199,66 @@ main {
 
 @keyframes arrowMove {
   0% {
-   transform: translateY(0);
+    transform: translateY(0);
   }
+
   25% {
     transform: translateY(-20px);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
+}
+
+.about-me {
+  background-color: rgb(247, 248, 250);
+  /* background: url('../images/') center center/cover no-repeat; */
+}
+
+.row-about-me {
+  display: flex;
+  justify-content: center;
+}
+
+.h1-section {
+  display: inline-block;
+}
+
+.info-container {
+  padding: 2rem 0;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.ab-content {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 7px 17px -7px rgba(77,76,77,1);
+-moz-box-shadow: 3px 7px 17px -7px rgba(77,76,77,1);
+box-shadow: 3px 7px 17px -7px rgba(77,76,77,0.5);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portrait {
+  width: 200px;
+  border-radius: 5px;
+  height: 200px;
+  background: url('../images/avt.jpg') center center/cover no-repeat;
+}
+
+.introduce {
+  margin: 0 auto;
+  max-width: 70%;
 }
