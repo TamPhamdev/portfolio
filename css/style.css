@@ -59,6 +59,7 @@ header {
 .nav-link {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .menu-nav {
@@ -73,7 +74,7 @@ header {
   margin: 0 2rem 0 0;
   transition: .5s;
 }
-
+/* Border bottom nav-item */
 .nav-item:after {
   transition: all ease-in-out .2s;
   background: none repeat scroll 0 0 #444;
@@ -91,6 +92,7 @@ header {
   height: 100%;
 }
 main {
+  overflow: hidden;
   padding: 4rem;
   height: 100%;
 }
@@ -113,7 +115,7 @@ main {
 .download {
   background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   display: inline;
-  border: .3px solid #fff;
+  outline: none;
   overflow: hidden;
   border-radius: 2rem;
   padding: .8rem;
@@ -139,5 +141,6 @@ main {
   float: right;
 }
 .background {
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  z-index: -1;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
