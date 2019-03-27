@@ -1,5 +1,6 @@
 @import url('config.css');
 @import url('menu.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -34,18 +35,21 @@ header {
   z-index: 2;
   width: 100%;
 }
-@media screen and (min-width: 500px){
+
+@media screen and (min-width: 500px) {
   .menu-nav {
     display: block;
   }
+
   .menu-btn {
     display: none;
   }
 }
+
 .menu {
   background: transparent;
   display: flex;
-  padding:2.1rem 1.2rem;
+  padding: 2.1rem 1.2rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -74,6 +78,7 @@ header {
   margin: 0 2rem 0 0;
   transition: .5s;
 }
+
 /* Border bottom nav-item */
 .nav-item:after {
   transition: all ease-in-out .2s;
@@ -87,26 +92,23 @@ header {
 .nav-item:hover:after {
   width: 100%;
 }
-.left-banner {
-  width: 50%;
-  height: 100%;
-}
+
 main {
   overflow: hidden;
-  padding: 4rem;
+  padding: 2rem 4rem 1rem 4rem;
   height: 100%;
 }
-#home > h1 {
-  margin-top: 10vh;
-}
+
 #home {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
 }
+
 .lg-heading {
   display: table;
 }
+
 .sm-heading {
   display: table;
   margin-bottom: 2rem;
@@ -121,26 +123,62 @@ main {
   padding: .8rem;
   cursor: pointer;
   text-transform: uppercase;
+  -webkit-box-shadow: 6px 6px 17px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: 6px 6px 17px 2px rgba(0,0,0,0.59);
+box-shadow: 6px 6px 17px 2px rgba(0,0,0,0.59);
 }
 
-.download > a  {
+.download>a {
   color: #fff;
-} 
+}
 
 .download:hover {
   transition: all 2s ease-out;
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
 
-.right-banner {
-  width: 50%;
-  height: 100%;
+.left-banner {
+  width: 100%;
+  height: 80%;
 }
-.right-banner > img {
-  width: 80%;
+
+.right-banner {
+  width: 100%;
+  height: 80%;
+}
+
+.right-banner>img {
+  width: 100%;
+  height: 80%;
   float: right;
 }
+
 .background {
   z-index: -1;
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.scroll-down {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 90%;
+  left: 47%;
+}
+
+.scroll-down>button>img {
+  width: 20px;
+}
+.scroll-down>button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .4rem 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.clear {
+  clear: both;
 }
