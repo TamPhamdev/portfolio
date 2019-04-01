@@ -24,3 +24,14 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+document.addEventListener('DOMContentLoaded', function () {
+  let nav = document.querySelector('#nav');
+  window.addEventListener('scroll', function () {
+    if (this.pageYOffset > 50) {
+      nav.classList.add('navbar_black');
+    }
+    if (this.pageYOffset < 50) {
+      nav.classList.remove('navbar_black');
+    }
+  });
+}, false)

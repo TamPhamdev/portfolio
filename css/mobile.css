@@ -145,6 +145,8 @@
   .download {
     max-width: 90%;
   }
+ 
+  
 }
 /* Medium: Tablet & Small laptops */
 @media screen and (max-width: 768px) {
@@ -183,6 +185,13 @@
     justify-content: center;
     left: 30%;
   }
+  .ab-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .info-container {
+    width: 100%;
+  }
 }
 
 /* Lage: Desktops & Laptops */
@@ -196,6 +205,9 @@
     text-align: center;
     justify-items: center;
     justify-content: center;
+  }
+  .info-container {
+    width: 100%;
   }
 }
 
