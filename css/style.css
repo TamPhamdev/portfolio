@@ -220,8 +220,8 @@ main {
 }
 
 .about-me {
-  background-color: rgb(247, 248, 250);
-  /* background: url('../images/') center center/cover no-repeat; */
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  
 }
 
 .row-about-me {
@@ -230,16 +230,18 @@ main {
   align-items: center;
 }
 
-.h1-section {
-  display: inline-block;
+div.h1-section {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .info-container {
-  height: 80vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
@@ -262,9 +264,9 @@ box-shadow: 3px 7px 17px -7px rgba(77,76,77,0.5);
 }
 
 .portrait {
-  width: 200px;
-  border-radius: 5px;
+  width: 100%;
   height: 200px;
+  border-radius: 5px;
   background: url('../images/avt.jpg') center center/cover no-repeat;
 }
 
@@ -273,25 +275,33 @@ box-shadow: 3px 7px 17px -7px rgba(77,76,77,0.5);
   max-width: 70%;
   padding: .5rem;
 }
-
-.project-contain {
-  padding-top:2rem; 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.project-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.project-left {
+  padding-top:2rem;
+  width: 80%;
+  margin: auto; 
 }
 
 .project-img {
-  width: 400px;
+  width: 100%;
   height: 200px;
 }
 
-.project-text {
+.project-right {
   display: flex;
   height: 100%;
   align-items: center;
   text-align: left;
 }
-.project-text ul >li {
-  padding: .7rem 0;
+.project-right ul >li {
+  list-style: none;
+  padding-bottom: .7rem;
+  width: 100%;
+}
+.project-link {
+  display: flex;
+  justify-content: space-around;
 }
