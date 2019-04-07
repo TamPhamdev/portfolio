@@ -7,6 +7,11 @@ let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
 
+navItems.forEach(function(item) {
+  item.addEventListener("click",remove);
+});
+
+
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add("close");
@@ -24,14 +29,27 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-document.addEventListener('DOMContentLoaded', function () {
-  let nav = document.querySelector('#nav');
-  window.addEventListener('scroll', function () {
-    if (this.pageYOffset > 50) {
-      nav.classList.add('navbar_black');
-    }
-    if (this.pageYOffset < 50) {
-      nav.classList.remove('navbar_black');
-    }
-  });
-}, false)
+
+function remove() {
+  menuBtn.classList.remove("close");
+  menu.classList.remove("show");
+  menuBranding.classList.remove("show");
+  menuNav.classList.remove("show");
+  navItems.forEach(item => item.classList.remove("show"));
+  showMenu = true;
+}
+document.addEventListener(
+  "DOMContentLoaded",
+  function() {
+    let nav = document.querySelector("#nav");
+    window.addEventListener("scroll", function() {
+      if (this.pageYOffset > 50) {
+        nav.classList.add("navbar_black");
+      }
+      if (this.pageYOffset < 50) {
+        nav.classList.remove("navbar_black");
+      }
+    });
+  },
+  false
+);

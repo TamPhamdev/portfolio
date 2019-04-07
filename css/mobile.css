@@ -136,7 +136,6 @@
   }
   div.project-left{
     width: 100%;
-    padding: auto 0;
     margin: auto;
   }
   div.project-right {
@@ -241,13 +240,17 @@
     width: 100%;
     padding: 0;
   }
-  .project-right {
-    padding: 0;
+  div.project-left {
+    text-align: center;
+    height: 100% ;
   }
-  .project-wrapper {
-    padding: 0;
+  
+  div.project-right {
     width: 100%;
+    margin: 0 auto !important;
+    text-align: left;
   }
+  
 }
 
 /* Lage: Desktops & Laptops */
@@ -265,9 +268,11 @@
   .info-container {
     width: 100%;
   }
+  img.project-img {
+    width: 100%;
+  }
   div.project-left {
     max-width: 100%;
-    width: auto;
   }
   div.col-10 {
     width: 100% !important;
