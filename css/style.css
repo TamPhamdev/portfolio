@@ -1,6 +1,7 @@
 @import url('config.css');
 @import url('menu.css');
 @import url('mobile.css');
+@import url('tabs.css');
 
 * {
   margin: 0;
@@ -37,6 +38,11 @@ header {
   position: fixed;
   width: 100%;
   height: 10vh;
+}
+
+.h1-heading {
+  font-size: 3rem;
+  font-weight: 600;
 }
 .navbar_black {
   background-color: #000 !important;
@@ -84,7 +90,9 @@ header {
   margin: 0 2rem 0 0;
   transition: .5s;
 }
-
+.nav-item.active {
+  border-bottom: 2px solid #ecf0f1;
+}
 /* Border bottom nav-item */
 
 .nav-item:after {
@@ -100,10 +108,17 @@ header {
   width: 100%;
 }
 
+.anchor{
+  display: block;
+  height: 101.19px; /*same height as header*/
+  margin-top: -101.19px; /*same height as header*/
+  visibility: hidden;
+}
+
 main {
   position: relative;
   overflow: hidden;
-  padding: 10rem 4rem 1rem 4rem;
+  padding: 8rem 4rem 1rem 4rem;
   height: 100%;
 }
 
@@ -112,6 +127,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .lg-heading {
@@ -125,8 +141,8 @@ main {
 
 .download {
   background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-  display: inline;
   outline: none;
+  width: fit-content;
   overflow: hidden;
   border-radius: 2rem;
   padding: .8rem;
@@ -150,6 +166,9 @@ main {
 .left-banner {
   width: 100%;
   height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .right-banner {
@@ -279,7 +298,8 @@ box-shadow: 3px 7px 17px -7px rgba(77,76,77,0.5);
 
 /* Project style */
 .wrapper-project {
- background-color: gainsboro;
+ background-color: #191828;
+ color: #efedef;
 }
 .project-container {
   display: flex;
@@ -290,12 +310,12 @@ box-shadow: 3px 7px 17px -7px rgba(77,76,77,0.5);
 }
 
 
+
 .project-img {
   width: 80%;
 }
 
 .project-right {
-  display: flex;
   align-items: center;
   text-align: left;
 }
@@ -305,6 +325,15 @@ box-shadow: 3px 7px 17px -7px rgba(77,76,77,0.5);
   width: 100%;
 }
 .project-link {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-around;
 }
+a.link-text {
+  color: #fff;
+}
+a.link-text:hover {
+  color: brown ;
+}
+
+

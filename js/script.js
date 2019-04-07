@@ -3,13 +3,15 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
+const sections = document.querySelectorAll("section");
+const navHeight = 102;
+const nav = document.querySelector("#nav");
 let showMenu = false;
-
 menuBtn.addEventListener("click", toggleMenu);
-
 navItems.forEach(function(item) {
   item.addEventListener("click",remove);
 });
+
 
 
 function toggleMenu() {
@@ -41,7 +43,6 @@ function remove() {
 document.addEventListener(
   "DOMContentLoaded",
   function() {
-    let nav = document.querySelector("#nav");
     window.addEventListener("scroll", function() {
       if (this.pageYOffset > 50) {
         nav.classList.add("navbar_black");
