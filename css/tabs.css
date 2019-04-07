@@ -65,7 +65,6 @@
   z-index: -100;
   overflow: hidden;
   outline: 0;
-  float: left;
 }
 
 .ui-tabgroup>input.ui-tab1:focus~.ui-tabs>.ui-tab1,
@@ -92,9 +91,9 @@
   min-height: 200px;
   padding: 25px;
   display: none;
-  word-wrap: break-word;
+  /* word-wrap: break-word;
   word-break: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: break-word; */
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
@@ -238,13 +237,7 @@
 
 .theme-plum .ui-tabgroup>input.ui-tab1:checked~.ui-tabs>.ui-tab1,
 .theme-plum .ui-tabgroup>input.ui-tab2:checked~.ui-tabs>.ui-tab2,
-.theme-plum .ui-tabgroup>input.ui-tab3:checked~.ui-tabs>.ui-tab3,
-.theme-plum .ui-tabgroup>input.ui-tab4:checked~.ui-tabs>.ui-tab4,
-.theme-plum .ui-tabgroup>input.ui-tab5:checked~.ui-tabs>.ui-tab5,
-.theme-plum .ui-tabgroup>input.ui-tab6:checked~.ui-tabs>.ui-tab6,
-.theme-plum .ui-tabgroup>input.ui-tab7:checked~.ui-tabs>.ui-tab7,
-.theme-plum .ui-tabgroup>input.ui-tab8:checked~.ui-tabs>.ui-tab8,
-.theme-plum .ui-tabgroup>input.ui-tab9:checked~.ui-tabs>.ui-tab9 {
+.theme-plum .ui-tabgroup>input.ui-tab3:checked~.ui-tabs>.ui-tab3 {
   background-color: #612e76;
   color: #fff;
   border: 2px solid #612e76;
@@ -265,13 +258,7 @@
 
 .theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab1:checked~.ui-tabs>.ui-tab1,
 .theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab2:checked~.ui-tabs>.ui-tab2,
-.theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab3:checked~.ui-tabs>.ui-tab3,
-.theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab4:checked~.ui-tabs>.ui-tab4,
-.theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab5:checked~.ui-tabs>.ui-tab5,
-.theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab6:checked~.ui-tabs>.ui-tab6,
-.theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab7:checked~.ui-tabs>.ui-tab7,
-.theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab8:checked~.ui-tabs>.ui-tab8,
-.theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab9:checked~.ui-tabs>.ui-tab9 {
+.theme-plum .ui-tabgroup.left-side.icons-only>input.ui-tab3:checked~.ui-tabs>.ui-tab3 {
   min-height: 40px;
   width: 54px;
   margin-left: -4px;
@@ -290,13 +277,7 @@
 
   .theme-plum .ui-tabgroup.left-side>input.ui-tab1:checked~.ui-tabs>.ui-tab1,
   .theme-plum .ui-tabgroup.left-side>input.ui-tab2:checked~.ui-tabs>.ui-tab2,
-  .theme-plum .ui-tabgroup.left-side>input.ui-tab3:checked~.ui-tabs>.ui-tab3,
-  .theme-plum .ui-tabgroup.left-side>input.ui-tab4:checked~.ui-tabs>.ui-tab4,
-  .theme-plum .ui-tabgroup.left-side>input.ui-tab5:checked~.ui-tabs>.ui-tab5,
-  .theme-plum .ui-tabgroup.left-side>input.ui-tab6:checked~.ui-tabs>.ui-tab6,
-  .theme-plum .ui-tabgroup.left-side>input.ui-tab7:checked~.ui-tabs>.ui-tab7,
-  .theme-plum .ui-tabgroup.left-side>input.ui-tab8:checked~.ui-tabs>.ui-tab8,
-  .theme-plum .ui-tabgroup.left-side>input.ui-tab9:checked~.ui-tabs>.ui-tab9 {
+  .theme-plum .ui-tabgroup.left-side>input.ui-tab3:checked~.ui-tabs>.ui-tab3{
     min-height: 40px;
     width: 144px;
     margin-left: -4px;
@@ -310,16 +291,8 @@
 
   .theme-plum .ui-tabgroup>input.ui-tab1:checked~.ui-tabs>.ui-tab1,
   .theme-plum .ui-tabgroup>input.ui-tab2:checked~.ui-tabs>.ui-tab2,
-  .theme-plum .ui-tabgroup>input.ui-tab3:checked~.ui-tabs>.ui-tab3,
-  .theme-plum .ui-tabgroup>input.ui-tab4:checked~.ui-tabs>.ui-tab4,
-  .theme-plum .ui-tabgroup>input.ui-tab5:checked~.ui-tabs>.ui-tab5,
-  .theme-plum .ui-tabgroup>input.ui-tab6:checked~.ui-tabs>.ui-tab6,
-  .theme-plum .ui-tabgroup>input.ui-tab7:checked~.ui-tabs>.ui-tab7,
-  .theme-plum .ui-tabgroup>input.ui-tab8:checked~.ui-tabs>.ui-tab8,
-  .theme-plum .ui-tabgroup>input.ui-tab9:checked~.ui-tabs>.ui-tab9 {
+  .theme-plum .ui-tabgroup>input.ui-tab3:checked~.ui-tabs>.ui-tab3 {
     min-height: 45px;
     margin-top: -4px;
   }
 }
-
-/* --- Theme Lime --- */
