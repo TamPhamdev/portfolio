@@ -171,18 +171,21 @@ main {
 }
 
 .social-badge {
- width: fit-content;
-  padding: 1rem; 
+  width: fit-content;
+  padding: 1rem;
 }
+
 .social-badge>a {
   color: #fff;
-  padding: 1rem; 
+  padding: 1rem;
   transition: all .4s ease-in-out;
 }
+
 .social-badge>a:hover {
   color: #f6cd61;
   transition: all .4s ease-in-out;
 }
+
 .social-badge>a>i {
   font-size: 1.4rem;
 }
@@ -220,7 +223,8 @@ main {
   top: 0;
   bottom: 0;
   z-index: -1;
-  background: url('../images/1_7cRAqUE493wd988uxuTIUg.png') center center / cover no-repeat;
+  /* background: url('../images/1_7cRAqUE493wd988uxuTIUg.png') center center / cover no-repeat; */
+  background: url(' https://res.cloudinary.com/dnm7dhpwb/image/upload/v1555053270/1_7cRAqUE493wd988uxuTIUg.png') center center / cover no-repeat;
 }
 
 .scroll-down {
@@ -324,6 +328,7 @@ div.h1-section {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
+
   to {
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
   }
@@ -365,7 +370,7 @@ img.project-img {
   width: 100%;
   max-height: 100%;
   height: 300px;
- 
+
 }
 
 .project-right {
@@ -401,13 +406,14 @@ a.link-text:hover {
 
 .section-header {
   text-align: center;
-  font-size: 1,1rem;
+  font-size: 1, 1rem;
   font-weight: bold;
 }
 
 .section-description {
   color: #6f1c26;
 }
+
 .form-input {
   margin: 0 auto;
   text-align: center;
@@ -417,23 +423,31 @@ a.link-text:hover {
   display: flex;
   flex-direction: column;
 }
-form input[type=text], input[type=email], textarea {
+
+form input[type=text],
+input[type=email],
+textarea {
   border: 1px solid #f6f6f7;
   border-radius: 4px;
   background-color: #f6f6f7;
   outline: none;
   transition: all .4s ease-in-out;
 }
-form input[type=text]:hover, input[type=email]:hover, textarea:hover {
+
+form input[type=text]:hover,
+input[type=email]:hover,
+textarea:hover {
   border: 1px solid #ccc;
   transition: all .4s ease-in-out;
 }
 
-form input, textarea {
+form input,
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-}  
+}
+
 form input[type="submit"] {
   font-size: 1rem;
   color: #fff;
@@ -442,14 +456,13 @@ form input[type="submit"] {
   border-radius: 4px;
   background-color: #fc5d76;
 }
-form input[type="submit"]:hover {
-  
-}
+
+form input[type="submit"]:hover {}
 
 footer {
   padding: 1rem;
   text-align: center;
-    font-size: small;
+  font-size: small;
   color: #fff;
   background-color: #3a3e3d;
 }

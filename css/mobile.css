@@ -115,7 +115,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    /* position: absolute; */
   }
 
   div.download {
@@ -149,6 +148,10 @@
   div.project-container {
     display: grid;
     grid-template-columns: 1fr !important;
+  }
+
+  .form-input {
+    max-width: 100% !important;
   }
 }
 
@@ -223,6 +226,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
  
   main#home > .scroll-down {
@@ -230,7 +234,7 @@
     text-align: center;
     justify-items: center;
     justify-content: center;
-    left: 30%;
+    /* left: 30%; */
   }
   .ab-content {
     display: flex;
@@ -250,7 +254,9 @@
     margin: 0 auto !important;
     text-align: left;
   }
-  
+  .form-input {
+    max-width: 80% !important;
+  }
 }
 
 /* Lage: Desktops & Laptops */
