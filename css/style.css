@@ -224,7 +224,7 @@ main {
   bottom: 0;
   z-index: -1;
   /* background: url('../images/1_7cRAqUE493wd988uxuTIUg.png') center center / cover no-repeat; */
-  background: url(' https://res.cloudinary.com/dnm7dhpwb/image/upload/v1555053270/1_7cRAqUE493wd988uxuTIUg.png') center center / cover no-repeat;
+  background: url(' https://res.cloudinary.com/dnm7dhpwb/image/upload/v1555053752/1_7cRAqUE493wd988uxuTIUg.webp') center center / cover no-repeat;
 }
 
 .scroll-down {
@@ -457,7 +457,7 @@ form input[type="submit"] {
   background-color: #fc5d76;
 }
 
-form input[type="submit"]:hover {}
+
 
 footer {
   padding: 1rem;
