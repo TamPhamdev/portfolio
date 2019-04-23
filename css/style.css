@@ -32,7 +32,9 @@ body {
 a {
   text-decoration: none;
 }
-
+a > i {
+  padding-right: 10px; 
+}
 header {
   z-index: 1;
   position: fixed;
@@ -397,7 +399,7 @@ a.link-text {
 }
 
 a.link-text:hover {
-  color: brown;
+  color: #f6cd61;
 }
 
 .container-full {
